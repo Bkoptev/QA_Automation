@@ -9,9 +9,8 @@ public class Lesson1Part1 {
         String varString ;
         varString = Integer.toString(varInt);
         varDouble = Double.parseDouble(varString);
-        varInt = (int) varDouble;
-        System.out.println(varInt);
-        System.out.println(varDouble);
+        System.out.println((int) varDouble);
+        System.out.println(Double.parseDouble(varString));
         System.out.println(varString);
     }
 }
