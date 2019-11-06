@@ -19,7 +19,7 @@ public class CollectionsTask {
             System.out.println("This is a key - " + integerStringEntry.getKey()
                     + "; this is a value - " + integerStringEntry.getValue());
         }
-        System.out.println("---------------------------");
+        System.out.println("-------------ArrayList--------------");
 
         ArrayList<String> fruits = new ArrayList<>();
         fruits.add("Apple");
@@ -31,7 +31,7 @@ public class CollectionsTask {
         for (int i = 0; i < fruits.size(); i++) {
             System.out.println(fruits.get(i));
         }
-        System.out.println("---------------------------");
+        System.out.println("-------------HashSet--------------");
 
         HashSet<String> set = new HashSet();
         set.add("pineapple");
@@ -45,7 +45,7 @@ public class CollectionsTask {
         while (setIterator.hasNext()) {
             System.out.println(setIterator.next());
         }
-        System.out.println("---------------------------");
+        System.out.println("------------LinkedList---------------");
 
         LinkedList<String> list = new LinkedList();
         list.add("plum");
@@ -63,18 +63,12 @@ public class CollectionsTask {
         while(listIterator.hasNext()){
             System.out.println(listIterator.next());
         }
-        System.out.println("-------------0--------------");
+        System.out.println("-------------Final_HashSet--------------");
 
-        Iterator setIterator1 = set.iterator();
-        Iterator listIterator1 = list.iterator();
-        while (setIterator1.hasNext()) {
-             if (set.contains(listIterator1.next())) {
-                 System.out.println(setIterator1.next());
-             }
-//                 else {
-//                     setIterator1.remove();
-//                 }
-             }
+        set.retainAll(list);
+        for (String elem : set) {
+            System.out.println(elem);
+        }
 
     }
 }
