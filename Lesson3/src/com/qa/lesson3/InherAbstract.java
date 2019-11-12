@@ -4,7 +4,7 @@ public class InherAbstract extends AbstractMonth{
     /**
      * Constructor
      *
-     * @param numOfMonth
+     * @param numOfMonth number of month
      */
     InherAbstract(int numOfMonth) {
         super(numOfMonth);
@@ -12,6 +12,6 @@ public class InherAbstract extends AbstractMonth{
 
     @Override
     void printPhrase() {
-
+        System.out.println("Test phrase on my choice #2");
     }
 }
