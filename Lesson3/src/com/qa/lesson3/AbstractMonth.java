@@ -54,40 +54,40 @@ public abstract class AbstractMonth {
         String name = "";
         switch (numOfMonth) {
             case 1:
-                name = Month.JANUARY.toString();
+                name = Month.JANUARY.getValue();
                 break;
             case 2:
-                name = Month.FEBRUARY.toString();
+                name = Month.FEBRUARY.getValue();
                 break;
             case 3:
-                name = Month.MARCH.toString();
+                name = Month.MARCH.getValue();
                 break;
             case 4:
-                name = Month.APRIL.toString();
+                name = Month.APRIL.getValue();
                 break;
             case 5:
-                name = Month.MAY.toString();
+                name = Month.MAY.getValue();
                 break;
             case 6:
-                name = Month.JUNE.toString();
+                name = Month.JUNE.getValue();
                 break;
             case 7:
-                name = Month.JULY.toString();
+                name = Month.JULY.getValue();
                 break;
             case 8:
-                name = Month.AUGUST.toString();
+                name = Month.AUGUST.getValue();
                 break;
             case 9:
-                name = Month.SEPTEMBER.toString();
+                name = Month.SEPTEMBER.getValue();
                 break;
             case 10:
-                name = Month.OCTOBER.toString();
+                name = Month.OCTOBER.getValue();
                 break;
             case 11:
-                name = Month.NOVEMBER.toString();
+                name = Month.NOVEMBER.getValue();
                 break;
             case 12:
-                name = Month.DECEMBER.toString();
+                name = Month.DECEMBER.getValue();
                 break;
         }
         return name;

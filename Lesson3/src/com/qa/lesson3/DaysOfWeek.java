@@ -15,8 +15,8 @@ public enum DaysOfWeek {
     /**
      * Constructor
      *
-     * @param name
-     * @param number
+     * @param name name of the day
+     * @param number number of the day
      */
     DaysOfWeek(String name, int number) {
         this.value = name;
