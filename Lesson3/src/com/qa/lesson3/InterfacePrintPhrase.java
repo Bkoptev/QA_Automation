@@ -2,63 +2,62 @@ package com.qa.lesson3;
 
 public class InterfacePrintPhrase implements TestInterface {
 
-
+    /**
+     * Printing dedicated phrase
+     */
     public void printPhrase() {
         System.out.println("Test phrase on my choice");
     }
 
+    /**
+     *
+     * @param  numOfDay number of the day
+     * @return          the name of the day
+     */
     public String returnDayNameByNum(int numOfDay) {
-        String dayName = "";
         switch (numOfDay) {
             case 1:
-                dayName = DaysOfWeek.MONDAY.getValue();
-                break;
+                return DaysOfWeek.MONDAY.getValue();
             case 2:
-                dayName = DaysOfWeek.TUESDAY.getValue();
-                break;
+                return DaysOfWeek.TUESDAY.getValue();
             case 3:
-                dayName = DaysOfWeek.WEDNESDAY.getValue();
-                break;
+                return DaysOfWeek.WEDNESDAY.getValue();
             case 4:
-                dayName = DaysOfWeek.THURSDAY.getValue();
-                break;
+                return DaysOfWeek.THURSDAY.getValue();
             case 5:
-                dayName = DaysOfWeek.FRIDAY.getValue();
-                break;
+                return DaysOfWeek.FRIDAY.getValue();
             case 6:
-                dayName = DaysOfWeek.SATURDAY.getValue();
-                break;
+                return DaysOfWeek.SATURDAY.getValue();
             case 7:
-                dayName = DaysOfWeek.SUNDAY.getValue();
-                break;
+                return DaysOfWeek.SUNDAY.getValue();
         }
-        return dayName;
+        return "";
     }
-    public int returnDayNumByName(String dayName1) {
-        int DayNum = 0;
-        switch (dayName1) {
+
+    /**
+     *
+     * @param  dayName name of the day
+     * @return         number of the day
+     */
+
+    public int returnDayNumByName(String dayName) {
+
+        switch (dayName) {
             case "Monday":
-                DayNum = DaysOfWeek.MONDAY.getNumber();
-                break;
+                return DaysOfWeek.MONDAY.getNumber();
             case "Tuesday":
-                DayNum = DaysOfWeek.TUESDAY.getNumber();
-                break;
+                return DaysOfWeek.TUESDAY.getNumber();
             case "Wednesday":
-                DayNum = DaysOfWeek.WEDNESDAY.getNumber();
-                break;
+                return DaysOfWeek.WEDNESDAY.getNumber();
             case "Thursday":
-                DayNum = DaysOfWeek.THURSDAY.getNumber();
-                break;
+                return DaysOfWeek.THURSDAY.getNumber();
             case "Friday":
-                DayNum = DaysOfWeek.FRIDAY.getNumber();
-                break;
+                return DaysOfWeek.FRIDAY.getNumber();
             case "Saturday":
-                DayNum = DaysOfWeek.SATURDAY.getNumber();
-                break;
+                return DaysOfWeek.SATURDAY.getNumber();
             case "Sunday":
-                DayNum = DaysOfWeek.SUNDAY.getNumber();
-                break;
+                return DaysOfWeek.SUNDAY.getNumber();
         }
-        return DayNum;
+        return 0;
     }
 }

@@ -10,6 +10,10 @@ public class InherAbstract extends AbstractMonth{
         super(numOfMonth);
     }
 
+
+    /**
+     * overriding og the method which prints dedicated phrase
+     */
     @Override
     void printPhrase() {
         System.out.println("Test phrase on my choice #2");

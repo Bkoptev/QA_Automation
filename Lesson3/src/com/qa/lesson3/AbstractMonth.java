@@ -7,7 +7,7 @@ public abstract class AbstractMonth {
     /**
      * Constructor
      *
-     * @param numOfMonth
+     * @param numOfMonth number of month
      */
     AbstractMonth(int numOfMonth) {
         this.numOfMonth = numOfMonth;
@@ -34,7 +34,7 @@ public abstract class AbstractMonth {
         /**
          * Constructor
          *
-         * @param name
+         * @param  name name of the month
          */
         Month(String name) {
             this.value = name;
@@ -50,47 +50,40 @@ public abstract class AbstractMonth {
         }
     }
 
+    /**
+     * return name of the month by it's number
+     *
+     * @param numOfMonth number of the month
+     * @return           name of the month by it's number
+     */
     public String getMonthNameByNum(int numOfMonth) {
-        String name = "";
         switch (numOfMonth) {
             case 1:
-                name = Month.JANUARY.getValue();
-                break;
+                return Month.JANUARY.getValue();
             case 2:
-                name = Month.FEBRUARY.getValue();
-                break;
+                return Month.FEBRUARY.getValue();
             case 3:
-                name = Month.MARCH.getValue();
-                break;
+                return Month.MARCH.getValue();
             case 4:
-                name = Month.APRIL.getValue();
-                break;
+                return Month.APRIL.getValue();
             case 5:
-                name = Month.MAY.getValue();
-                break;
+                return Month.MAY.getValue();
             case 6:
-                name = Month.JUNE.getValue();
-                break;
+                return Month.JUNE.getValue();
             case 7:
-                name = Month.JULY.getValue();
-                break;
+                return Month.JULY.getValue();
             case 8:
-                name = Month.AUGUST.getValue();
-                break;
+                return Month.AUGUST.getValue();
             case 9:
-                name = Month.SEPTEMBER.getValue();
-                break;
+                return Month.SEPTEMBER.getValue();
             case 10:
-                name = Month.OCTOBER.getValue();
-                break;
+                return Month.OCTOBER.getValue();
             case 11:
-                name = Month.NOVEMBER.getValue();
-                break;
+                return Month.NOVEMBER.getValue();
             case 12:
-                name = Month.DECEMBER.getValue();
-                break;
+                return Month.DECEMBER.getValue();
         }
-        return name;
+        return "";
 
     }
 }
