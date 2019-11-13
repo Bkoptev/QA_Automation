@@ -1,6 +1,6 @@
 package com.qa.lesson3;
 
-public class InterfacePrintPhrase implements TestInterface {
+public class PrintDaysOfWeek implements TestInterface {
 
     /**
      * Printing dedicated phrase

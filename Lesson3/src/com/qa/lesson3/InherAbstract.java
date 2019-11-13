@@ -12,7 +12,7 @@ public class InherAbstract extends AbstractMonth{
 
 
     /**
-     * overriding og the method which prints dedicated phrase
+     * overriding of the method which prints dedicated phrase
      */
     @Override
     void printPhrase() {

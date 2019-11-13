@@ -2,7 +2,7 @@ package com.qa.lesson3;
 
 public class Runner {
     public static void main(String[] args) {
-        InterfacePrintPhrase printSmth = new InterfacePrintPhrase();
+        PrintDaysOfWeek printSmth = new PrintDaysOfWeek();
         InherAbstract  numOfM = new InherAbstract(1);
 
         System.out.println(printSmth.returnDayNameByNum(2));
